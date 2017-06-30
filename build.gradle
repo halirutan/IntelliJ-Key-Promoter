@@ -1,3 +1,4 @@
+
 plugins {
     id "org.jetbrains.intellij" version "0.2.13"
 }
@@ -9,6 +10,14 @@ intellij {
     version = '2017.1.4'
     updateSinceUntilBuild = false
     pluginName = 'Key-Promoter'
+}
+
+String myDescription = file('resources/META-INF/description.html').text
+String myChangeNotes = file('resources/META-INF/change-notes.html').text
+
+patchPluginXml {
+    pluginDescription = myDescription
+    changeNotes = myChangeNotes
 }
 
 repositories {
@@ -25,3 +34,5 @@ sourceSets {
 task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
+
+version = '3.0.1'
