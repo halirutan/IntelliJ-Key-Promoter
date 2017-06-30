@@ -1,10 +1,6 @@
 <idea-plugin>
-    <name>Key promoter</name>
-    <version>3.0.1</version>
+    <name>Key Promoter</name>
     <vendor>Patrick Scheibe (originally Dmitry Kashin, former maintainer athiele)</vendor>
-    <idea-version since-build="162"/>
-    <description>fixed by Gradle</description>
-    <change-notes>fixed by Gradle</change-notes>
     <application-components>
         <component>
             <implementation-class>org.jetbrains.contest.keypromoter.KeyPromoter</implementation-class>
