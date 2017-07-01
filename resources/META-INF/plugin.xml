@@ -1,5 +1,5 @@
 <idea-plugin>
-    <name>Key Promoter</name>
+    <name>Key promoter</name>
     <vendor>Patrick Scheibe (originally Dmitry Kashin, former maintainer athiele)</vendor>
     <application-components>
         <component>

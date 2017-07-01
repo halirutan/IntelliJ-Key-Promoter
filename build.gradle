@@ -8,6 +8,11 @@ tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
 apply plugin: 'org.jetbrains.intellij'
 apply plugin: 'java'
 
+// On travis, we don't want to deploy to Jetbrains that requires credentials
+if (project.file('gradle.properties').exists()) {
+    apply from: "gradle.properties"
+}
+
 intellij {
     version = '2017.1.4'
     updateSinceUntilBuild = true
@@ -38,4 +43,4 @@ task wrapper(type: Wrapper) {
     gradleVersion = '3.5'
 }
 
-version = '3.1'
+version = '3.1.1'
