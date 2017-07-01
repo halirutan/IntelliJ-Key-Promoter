@@ -111,7 +111,7 @@ public class KeyPromoter implements ApplicationComponent, AWTEventListener {
 
         // Figuring out if we are running on a mac
         if (osName.contains("OS X")) {
-            metaKey = "⌘";
+            metaKey = "\u2318";
         }
 
         if (keyPromoterSettings.isToolWindowButtonsEnabled() && source instanceof StripeButton) {
